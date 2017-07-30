@@ -1,0 +1,16 @@
+[Unit]
+Description=NTP Control dynamic backend for website
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/ntpctrl-backend/
+ExecStart=/opt/ntpctrl-backend/ntpctrl.py
+StandardOutput=null
+StandardError=syslog
+Restart=on-failure
+
+
+[Install]
+WantedBy=multi-user.target

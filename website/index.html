@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>NTP Control</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/w3.css">
+	<script src="/js/jquery-3.2.1.min.js"></script>
+	<script src="/js/functions.js"></script>
+	<style>
+		.extra-monospace { font-family: "Courier New", Courier, monospace; }
+		.extra-breakall { word-break: break-all; word-wrap: break-word; }
+	</style>
+</head>
+
+<body>
+	
+<div class="w3-container">
+	
+	<div class="w3-panel w3-round-large w3-light-gray w3-center w3-xxxlarge">NTP Control</div>
+	
+	<div id="time" class="w3-panel w3-center w3-xxlarge">... loading ...</div>
+	
+	
+	<button onclick="accordion('ntpd_daemon', '/api/ntpd/daemon')" class="w3-panel w3-padding w3-left-align w3-button w3-block w3-round-large w3-light-gray w3-medium">NTP Daemon</button>
+	<div id="ntpd_daemon" class="w3-container w3-white w3-round-large w3-small extra-monospace extra-breakall w3-hide">... loading ...</div>
+	
+	<button onclick="accordion('ntpd_status', '/api/ntpd/status')" class="w3-panel w3-padding w3-left-align w3-button w3-block w3-round-large w3-light-gray w3-medium">NTP Status</button>
+	<div id="ntpd_status" class="w3-container w3-white w3-round-large w3-small extra-monospace extra-breakall w3-hide">... loading ...</div>
+	
+	<button onclick="accordion_nbsp_all('ntpd_sources', '/api/ntpd/sources')" class="w3-panel w3-padding w3-left-align w3-button w3-block w3-round-large w3-light-gray w3-medium">NTP Sources</button>
+	<div id="ntpd_sources" class="w3-container w3-white w3-round-large w3-small extra-monospace extra-breakall w3-hide">... loading ...</div>
+	
+	<button onclick="accordion('ntpd_config', '/api/ntpd/config')" class="w3-panel w3-padding w3-left-align w3-button w3-block w3-round-large w3-light-gray w3-medium">NTP Configuration</button>
+	<div id="ntpd_config" class="w3-container w3-white w3-round-large w3-small extra-monospace extra-breakall w3-hide">... loading ...</div>
+	
+	<button onclick="accordion('gpsd_daemon', '/api/gpsd/daemon')" class="w3-panel w3-padding w3-left-align w3-button w3-block w3-round-large w3-light-gray w3-medium">GPS Daemon</button>
+	<div id="gpsd_daemon" class="w3-container w3-white w3-round-large w3-small extra-monospace extra-breakall w3-hide">... loading ...</div>
+	
+	<button onclick="accordion('gpsd_config', '/api/gpsd/config')" class="w3-panel w3-padding w3-left-align w3-button w3-block w3-round-large w3-light-gray w3-medium">GPS Config</button>
+	<div id="gpsd_config" class="w3-container w3-white w3-round-large w3-small extra-monospace extra-breakall w3-hide">... loading ...</div>
+	
+	<button onclick="accordion('gpsd_sample_raw', '/api/gpsd/sample/raw')" class="w3-panel w3-padding w3-left-align w3-button w3-block w3-round-large w3-light-gray w3-medium">GPS Sample RAW</button>
+	<div id="gpsd_sample_raw" class="w3-container w3-white w3-round-large w3-small extra-monospace extra-breakall w3-hide">... loading ...</div>
+	
+	<button onclick="accordion('gpsd_sample_json', '/api/gpsd/sample/json')" class="w3-panel w3-padding w3-left-align w3-button w3-block w3-round-large w3-light-gray w3-medium">GPS Sample JSON</button>
+	<div id="gpsd_sample_json" class="w3-container w3-white w3-round-large w3-small extra-monospace extra-breakall w3-hide">... loading ...</div>
+	
+</div>
+	
+</body>
+
+</html> 
